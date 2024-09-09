@@ -1,11 +1,11 @@
 # Sila: A WIP Framework for Training, Data Labelling, and Synthetic Data Generation built to run on AWS Parallel Cluster
 
 ### Documentation
-[ ] Starting up a Slurm scheduled cluster using the AWS CLI
-[ ] Running a containerized training job with SLURM
-[ ] Building a model for batched offline inference with TensorRT LLM
-[ ] Running a containerized data annotation job
-[ ] Running a containerized synthetic data generation job
+[] Starting up a Slurm scheduled cluster using the AWS CLI
+[] Running a containerized training job with SLURM
+[] Building a model for batched offline inference with TensorRT LLM
+[] Running a containerized data annotation job
+[] Running a containerized synthetic data generation job
 
 
 ### 1. Finetune a model for educational value regression
