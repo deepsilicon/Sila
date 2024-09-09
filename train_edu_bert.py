@@ -46,7 +46,7 @@ def compute_metrics(eval_pred):
 
 def main(args):
     dataset = load_dataset(
-        args.dataset_name, split="train", cache_dir="/scratch/cosmo/cache/", num_proc=8
+        args.dataset_name, split="train", cache_dir="/fsx/dataset/cache/", num_proc=8
     )
     dataset = dataset.map(
         lambda x: {args.target_column: np.clip(int(x[args.target_column]), 0, 5)},
@@ -75,9 +75,16 @@ def main(args):
         tokenizer.pad_token = tokenizer.eos_token
 
     def preprocess(examples):
-        batch = tokenizer(examples["text"], truncation=True)
-        batch["labels"] = np.float32(examples[args.target_column])
-        return batch
+        #batch = tokenizer(examples["text"], truncation=True)
+        print(type(examples['code']))
+        print(len(examples['code']))
+        try:
+            batch = tokenizer(examples["code"], truncation=True)
+            batch["labels"] = np.float32(examples[args.target_column])
+            return batch
+        except Exception as e:
+            print(f"Error during tokenization: {e}")
+
 
     dataset = dataset.map(preprocess, batched=True)
     data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
@@ -130,16 +137,18 @@ if __name__ == "__main__":
     parser.add_argument(
         "--dataset_name",
         type=str,
-        default="HuggingFaceFW/fineweb-edu-llama3-annotations",
-    )
+        #default="kaizen9/starcoder_annotations",
+        #default = "HuggingFaceFW/fineweb-edu-llama3-annotations"
+        default = "kaizen9/starcoder_annotations"
+        )
     parser.add_argument("--target_column", type=str, default="score")
     parser.add_argument(
         "--checkpoint_dir",
         type=str,
-        default="/fsx/anton/cosmopedia/edu_score/bert_snowflake_regression",
+        default="/fsx/kaizen/starcoderedu/bert_snowflake_regression",
     )
     parser.add_argument(
-        "--output_model_name", type=str, default="HuggingFaceTB/fineweb-edu-scorer"
+        "--output_model_name", type=str, default="kaizen9/starcoderdata_edu_scorer"
     )
     args = parser.parse_args()
 
