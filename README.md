@@ -21,4 +21,4 @@ sbatch run_edu_bert.slurm
 
 ### Appendix
 
-You can find our StarCoder Dataset Annotations [here]([url](https://huggingface.co/datasets/kaizen9/starcoder_annotations))
+You can find our StarCoder Dataset Annotations ([here](https://huggingface.co/datasets/kaizen9/starcoder_annotations))
