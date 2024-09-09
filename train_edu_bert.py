@@ -75,7 +75,7 @@ def main(args):
         tokenizer.pad_token = tokenizer.eos_token
 
     def preprocess(examples):
-        batch = tokenizer(examples["code"][:][:50], truncation=True)
+        batch = tokenizer(examples["code"], truncation=True)
         batch["labels"] = np.float32(examples[args.target_column])
         return batch
 
