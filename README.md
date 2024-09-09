@@ -1,4 +1,4 @@
-# Educational value classifier
+# Sila: A WIP Framework for Training, Data Labelling, and Synthetic Data Generation built to run on AWS Parallel Cluster
 
 ### 1. Finetune a model for educational value regression
 
