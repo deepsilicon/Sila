@@ -8,7 +8,10 @@
 - [ ] Running a containerized synthetic data generation job
 
 
-### 1. Finetune a model for educational value regression
+### 1. Data Labeling + Quality Classifiers 
+
+
+## 1.1 Finetune a model for educational value regression
 
 * edit `train_edu_bert.slurm`
 ```bash
