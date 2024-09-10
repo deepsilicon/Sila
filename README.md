@@ -13,14 +13,15 @@
 #### 1.1 Generate annotations data quality classifier - distilization  
 Leveragtes TensorRT SDK to perform batched inference given a prompt, model, and data.
 
-* edit `batched_tensorRT.py`
+
+* edit `batched_tensorRT.py` and `merge_data_subsets.py`
 ```bash
 python batched_tensorRT.py
 ```
 
 #### 1.2 Finetune model for data quality regression
 Currently predicts education value of code snippets (labels are 0-5)
-* edit `train_edu_bert.slurm`
+* edit `train_edu_bert.py`
 ```bash
 --base_model_name="Snowflake/snowflake-arctic-embed-m" \  # BERT-like base model
 --dataset_name="https://huggingface.co/datasets/kaizen9/starcoder_annotations" \  # Llama3.1 70B -annotated eduational value dataset
