@@ -10,15 +10,16 @@
 
 ### 1. Data Labeling + Quality Classifiers 
 
-#### 1.1 Create training data for quality classifier - distilization  
+#### 1.1 Generate annotations data quality classifier - distilization  
+Leveragtes TensorRT SDK to perform batched inference given a prompt, model, and data.
 
-* edit `train_edu_bert.slurm`
+* edit `batched_tensorRT.py`
 ```bash
-batched_inference.py
+python batched_tensorRT.py
 ```
 
-#### 1.2 Finetune model for educational value regression
-
+#### 1.2 Finetune model for data quality regression
+Currently predicts education value of code snippets (labels are 0-5)
 * edit `train_edu_bert.slurm`
 ```bash
 --base_model_name="Snowflake/snowflake-arctic-embed-m" \  # BERT-like base model
