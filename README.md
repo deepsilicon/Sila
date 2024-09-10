@@ -31,11 +31,16 @@ Currently predicts education value of code snippets (labels are 0-5)
 sbatch train_edu_bert.slurm
 ```
 
-#### 1.1 Label Dataset with the educational scores with model
+#### 1.3 Label Dataset with the educational scores with model
     
 ```bash
 sbatch run_edu_bert.slurm
 ```
+
+### 2.Synthetic Data Generation 
+
+Coming soon!
+
 
 ### Appendix
 
