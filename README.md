@@ -1,6 +1,6 @@
 # Sila: A WIP Framework for Training, Data Labelling, and Synthetic Data Generation built to run on AWS Parallel Cluster
 
-## N.B Ternary Implementation Repository will be released soon. We'll be fleshing out documentation and pushing code in a bit. 
+## N.B. ternary implementation repo will be released soon - we're also fleshing out documentation + code here, stay tuned
 ### Documentation
 - [ ] Starting up a Slurm scheduled cluster using the AWS CLI
 - [ ] Running a containerized training job with SLURM
