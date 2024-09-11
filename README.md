@@ -45,4 +45,6 @@ Coming soon!
 
 ### Appendix
 
+Classifier code repurposed from huggingface/cosmopediav2/classifier
+
 You can find our StarCoder Dataset Annotations ([here](https://huggingface.co/datasets/kaizen9/starcoder_annotations))
