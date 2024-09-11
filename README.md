@@ -14,12 +14,15 @@
 ### 1. Data Labeling + Quality Classifiers 
 
 #### 1.1 Generate annotations data quality classifier - distilization  
-Leveragtes TensorRT SDK to perform batched inference given a prompt, model, and data.
+Leverages [TensorRT LLM](https://github.com/NVIDIA/TensorRT-LLM) to perform batched inference given a prompt, model, and data. The following script is based off of the `run.py` sample code located in the `/examples/` directory. The same runtime flags for the file can be used with the addition of:
 
+* `--prepend_system_prompt`: Prepends text to the provided sample to help the model generate an output
+* `--append_system_prompt`: Appends text to the provided sample to help the model generate an output
+* `--output_pkl`: The path and file names of the pickle file where the tuples of prompt and output should be written to
 
 * edit `batched_tensorRT.py` and `merge_data_subsets.py`
 ```bash
-python batched_tensorRT.py
+python batched_tensorRT.py 
 ```
 
 #### 1.2 Finetune model for data quality regression
