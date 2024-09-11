@@ -1,6 +1,6 @@
 # Sila: A WIP Framework for Training, Data Labelling, and Synthetic Data Generation built to run on AWS Parallel Cluster
 
-## This repository serves to consolidate and create  cutting edge techniques in data synthesis, filtrartion, and inference. Further, we hope to package everything so that anyone can leverage computer clusters and run everything through CLI.
+## This repository serves to consolidate and create  cutting edge techniques in data synthesis, filtration, and inference. Further, we hope to package everything so that anyone can leverage computer clusters and run everything through CLI.
 
 ## N.B. ternary implementation repo will be released soon - we're also fleshing out documentation + code here, stay tuned
 ### Documentation
