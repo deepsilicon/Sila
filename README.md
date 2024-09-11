@@ -13,7 +13,7 @@
 
 ### 1. Data Labeling + Quality Classifiers 
 
-#### 1.1 Generate annotations data quality classifier - distilization  
+#### 1.1 Generate Annotations to Create a Data Quality Classifier - Distilliation  
 Leverages [TensorRT LLM](https://github.com/NVIDIA/TensorRT-LLM) to perform batched inference given a prompt, model, and data. The following script is based off of the `run.py` sample code located in the `/examples/` directory. The same runtime flags for the file can be used with the addition of:
 
 * `--prepend_system_prompt`: Prepends text to the provided sample to help the model generate an output
@@ -25,7 +25,7 @@ Leverages [TensorRT LLM](https://github.com/NVIDIA/TensorRT-LLM) to perform batc
 python batched_tensorRT.py 
 ```
 
-#### 1.2 Finetune model for data quality regression
+#### 1.2 Finetune Model for Data Quality Regression
 Currently predicts education value of code snippets (labels are 0-5)
 * edit `train_edu_bert.py`
 ```bash
@@ -33,12 +33,12 @@ Currently predicts education value of code snippets (labels are 0-5)
 --dataset_name="https://huggingface.co/datasets/kaizen9/starcoder_annotations" \  # Llama3.1 70B -annotated eduational value dataset
 --target_column="score" 
 ```
-* run the training script on a SLURM cluster:
+* Run the training script on a SLURM cluster:
 ```bash
 sbatch train_edu_bert.slurm
 ```
 
-#### 1.3 Label Dataset with the educational scores with model
+#### 1.3 Label Dataset with the Educational Scores Predicted by the Model
     
 ```bash
 sbatch run_edu_bert.slurm
