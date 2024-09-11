@@ -20,10 +20,28 @@ Leverages [TensorRT LLM](https://github.com/NVIDIA/TensorRT-LLM) to perform batc
 * `--append_system_prompt`: Appends text to the provided sample to help the model generate an output
 * `--output_pkl`: The path and file name of the pickle file where the tuples of prompt and output should be written to
 
-* edit `batched_tensorRT.py` and `merge_data_subsets.py`
+First edit `batched_tensorRT.py` and `merge_data_subsets.py` if they do not fufill your needs. Then run:
 ```bash
-python batched_tensorRT.py 
+run.py \
+    --engine_dir ./tmp/llama/70B/trt_engines/fp16/8-gpu/ \
+    --tokenizer_dir ./tmp/LongAlpaca-70B/
+    --input_file ./samples/code_samples.pkl
+    --prepend_system_prompt "Is this good code?"
+    --append_system_prompt "Rate it from 1-5: "
+    --output_pkl ./generated_data/analyzed_code_samples.pkl
 ```
+To run in a multinode environment, run:
+```bash
+mpirun -n <number of GPUs on node> --allow-run-as-root run.py \
+    --engine_dir ./tmp/llama/70B/trt_engines/fp16/8-gpu/ \
+    --tokenizer_dir ./tmp/LongAlpaca-70B/
+    --input_file ./samples/code_samples.pkl
+    --prepend_system_prompt "Is this good code?"
+    --append_system_prompt "Rate it from 1-5: "
+    --output_pkl ./generated_data/analyzed_code_samples.pkl
+```
+
+Also consider using a better prompt than the ones in the examples above, or our default prompt :)
 
 #### 1.2 Finetune Model for Data Quality Regression
 Currently predicts education value of code snippets (labels are 0-5)
