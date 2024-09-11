@@ -22,7 +22,7 @@ Leverages [TensorRT LLM](https://github.com/NVIDIA/TensorRT-LLM) to perform batc
 
 First edit `batched_tensorRT.py` and `merge_data_subsets.py` if they do not fufill your needs. Then run:
 ```bash
-run.py \
+batched_tensorRT.py \
     --engine_dir ./tmp/llama/70B/trt_engines/fp16/8-gpu/ \
     --tokenizer_dir ./tmp/LongAlpaca-70B/
     --input_file ./samples/code_samples.pkl
@@ -32,7 +32,7 @@ run.py \
 ```
 To run in a multi GPU environment, run:
 ```bash
-mpirun -n <number of GPUs on node> --allow-run-as-root run.py \
+mpirun -n <number of GPUs on node> --allow-run-as-root batched_tensorRT.py \
     --engine_dir ./tmp/llama/70B/trt_engines/fp16/8-gpu/ \
     --tokenizer_dir ./tmp/LongAlpaca-70B/
     --input_file ./samples/code_samples.pkl
