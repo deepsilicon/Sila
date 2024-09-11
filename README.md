@@ -30,7 +30,7 @@ run.py \
     --append_system_prompt "Rate it from 1-5: "
     --output_pkl ./generated_data/analyzed_code_samples.pkl
 ```
-To run in a multinode environment, run:
+To run in a multi GPU environment, run:
 ```bash
 mpirun -n <number of GPUs on node> --allow-run-as-root run.py \
     --engine_dir ./tmp/llama/70B/trt_engines/fp16/8-gpu/ \
