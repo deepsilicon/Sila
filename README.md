@@ -18,7 +18,7 @@ Leverages [TensorRT LLM](https://github.com/NVIDIA/TensorRT-LLM) to perform batc
 
 * `--prepend_system_prompt`: Prepends text to the provided sample to help the model generate an output
 * `--append_system_prompt`: Appends text to the provided sample to help the model generate an output
-* `--output_pkl`: The path and file names of the pickle file where the tuples of prompt and output should be written to
+* `--output_pkl`: The path and file name of the pickle file where the tuples of prompt and output should be written to
 
 * edit `batched_tensorRT.py` and `merge_data_subsets.py`
 ```bash
