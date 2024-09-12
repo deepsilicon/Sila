@@ -1,0 +1,65 @@
+Casting the dataset: 100%|███████████████████████████████████████████████| 5000/5000 [00:00<00:00, 112263.03 examples/s]
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at Snowflake/snowflake-arctic-embed-l and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+
+Map: 100%|██████████████████████████████████████████████████████████████████| 4500/4500 [00:05<00:00, 865.31 examples/s]
+Map: 100%|████████████████████████████████████████████████████████████████████| 500/500 [00:00<00:00, 847.84 examples/s]
+[34m[1mwandb[39m[22m: [33mWARNING[39m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+  0%|                                                                                            | 0/50 [00:00<?, ?it/s]/opt/conda/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+                                                                                                                        /opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))                          | 0/1 [00:00<?, ?it/s]
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  0%|                                                                                            | 0/50 [00:10<?, ?it/s]
+Validation Report:
+              precision    recall  f1-score   support
+           0       0.00      1.00      0.00         1
+           1       0.00      0.00      0.00        48
+           2       0.00      0.00      0.00       214
+           3       0.00      0.00      0.00       112
+           4       0.00      0.00      0.00       105
+           5       0.00      0.00      0.00        20
+    accuracy                           0.00       500
+   macro avg       0.00      0.17      0.00       500
+weighted avg       0.00      0.00      0.00       500
+Confusion Matrix:
+[[  1   0   0   0   0   0]
+ [ 48   0   0   0   0   0]
+ [214   0   0   0   0   0]
+ [112   0   0   0   0   0]
+ [105   0   0   0   0   0]
+ [ 20   0   0   0   0   0]]
+  0%|                                                                                            | 0/50 [00:10<?, ?it/s]/opt/conda/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 32%|██████████████████████████▌                                                        | 16/50 [01:48<03:28,  6.12s/it]Traceback (most recent call last):
+  File "/home/edward/Sila/train_edu_bert.py", line 196, in <module>
+    main(args)
+  File "/home/edward/Sila/train_edu_bert.py", line 150, in main
+    trainer.train()
+  File "/opt/conda/lib/python3.10/site-packages/transformers/trainer.py", line 1929, in train
+    return inner_training_loop(
+  File "/opt/conda/lib/python3.10/site-packages/transformers/trainer.py", line 2284, in _inner_training_loop
+    and (torch.isnan(tr_loss_step) or torch.isinf(tr_loss_step))
+KeyboardInterrupt

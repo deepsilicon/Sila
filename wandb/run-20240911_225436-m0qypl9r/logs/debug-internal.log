@@ -1,0 +1,349 @@
+2024-09-11 22:54:36,885 INFO    StreamThr :80736 [internal.py:wandb_internal():85] W&B internal server running at pid: 80736, started at: 2024-09-11 22:54:36.884742
+2024-09-11 22:54:36,887 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status
+2024-09-11 22:54:36,888 INFO    WriterThread:80736 [datastore.py:open_for_write():87] open: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/run-m0qypl9r.wandb
+2024-09-11 22:54:36,888 DEBUG   SenderThread:80736 [sender.py:send():391] send: header
+2024-09-11 22:54:36,888 DEBUG   SenderThread:80736 [sender.py:send():391] send: run
+2024-09-11 22:54:37,146 INFO    SenderThread:80736 [dir_watcher.py:__init__():211] watching files in: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files
+2024-09-11 22:54:37,146 INFO    SenderThread:80736 [sender.py:_start_run_threads():1200] run started: m0qypl9r with start time 1726095276.884438
+2024-09-11 22:54:37,151 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: run_start
+2024-09-11 22:54:47,135 DEBUG   HandlerThread:80736 [system_info.py:__init__():26] System info init
+2024-09-11 22:54:47,135 DEBUG   HandlerThread:80736 [system_info.py:__init__():41] System info init done
+2024-09-11 22:54:47,135 INFO    HandlerThread:80736 [system_monitor.py:start():194] Starting system monitor
+2024-09-11 22:54:47,136 INFO    SystemMonitor:80736 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-09-11 22:54:47,136 INFO    HandlerThread:80736 [system_monitor.py:probe():214] Collecting system info
+2024-09-11 22:54:47,136 INFO    SystemMonitor:80736 [interfaces.py:start():188] Started cpu monitoring
+2024-09-11 22:54:47,137 INFO    SystemMonitor:80736 [interfaces.py:start():188] Started disk monitoring
+2024-09-11 22:54:47,138 INFO    SystemMonitor:80736 [interfaces.py:start():188] Started gpu monitoring
+2024-09-11 22:54:47,140 INFO    SystemMonitor:80736 [interfaces.py:start():188] Started memory monitoring
+2024-09-11 22:54:47,140 INFO    SystemMonitor:80736 [interfaces.py:start():188] Started network monitoring
+2024-09-11 22:54:47,188 DEBUG   HandlerThread:80736 [system_info.py:probe():152] Probing system
+2024-09-11 22:54:47,190 DEBUG   HandlerThread:80736 [system_info.py:_probe_git():137] Probing git
+2024-09-11 22:54:47,194 DEBUG   HandlerThread:80736 [system_info.py:_probe_git():145] Probing git done
+2024-09-11 22:54:47,194 DEBUG   HandlerThread:80736 [system_info.py:probe():200] Probing system done
+2024-09-11 22:54:47,194 DEBUG   HandlerThread:80736 [system_monitor.py:probe():223] {'os': 'Linux-5.10.0-31-cloud-amd64-x86_64-with-glibc2.31', 'python': '3.10.4', 'heartbeatAt': '2024-09-11T22:54:47.188464', 'startedAt': '2024-09-11T22:54:36.881715', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/edward/Sila/train_edu_bert.py', 'codePathLocal': 'train_edu_bert.py', 'codePath': 'train_edu_bert.py', 'git': {'remote': 'https://github.com/deepsilicon/Sila.git', 'commit': '8d22f82bdc75c2e0556e969a3b92136cd1d73b66'}, 'email': None, 'root': '/home/edward/Sila', 'host': 'instance-h100', 'username': 'edward', 'executable': '/opt/conda/bin/python', 'cpu_count': 104, 'cpu_count_logical': 208, 'cpu_freq': {'current': 2699.99800000001, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 4921.297119140625, 'used': 61.01602554321289}}, 'gpu': 'NVIDIA H100 80GB HBM3', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}], 'memory': {'total': 1842.601634979248}}
+2024-09-11 22:54:47,194 INFO    HandlerThread:80736 [system_monitor.py:probe():224] Finished collecting system info
+2024-09-11 22:54:47,194 INFO    HandlerThread:80736 [system_monitor.py:probe():227] Publishing system info
+2024-09-11 22:54:47,194 DEBUG   HandlerThread:80736 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-09-11 22:54:48,166 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_created():271] file/dir created: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/conda-environment.yaml
+2024-09-11 22:54:51,818 DEBUG   HandlerThread:80736 [system_info.py:_save_conda():224] Saving conda packages done
+2024-09-11 22:54:51,819 INFO    HandlerThread:80736 [system_monitor.py:probe():229] Finished publishing system info
+2024-09-11 22:54:51,821 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:54:51,821 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: keepalive
+2024-09-11 22:54:51,821 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:54:51,821 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: keepalive
+2024-09-11 22:54:51,821 DEBUG   SenderThread:80736 [sender.py:send():391] send: files
+2024-09-11 22:54:51,822 INFO    SenderThread:80736 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-09-11 22:54:51,946 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: python_packages
+2024-09-11 22:54:51,946 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 22:54:51,946 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: python_packages
+2024-09-11 22:54:51,947 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 22:54:51,948 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 22:54:52,062 DEBUG   SenderThread:80736 [sender.py:send():391] send: telemetry
+2024-09-11 22:54:52,102 INFO    wandb-upload_0:80736 [upload_job.py:push():130] Uploaded file /var/tmp/tmpns7ohu21wandb/1u4ct0wa-wandb-metadata.json
+2024-09-11 22:54:52,166 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/conda-environment.yaml
+2024-09-11 22:54:52,166 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_created():271] file/dir created: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/wandb-metadata.json
+2024-09-11 22:54:52,166 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_created():271] file/dir created: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/requirements.txt
+2024-09-11 22:54:53,063 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:54:54,167 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_created():271] file/dir created: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:54:56,167 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:54:58,167 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:54:58,418 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:54:59,962 DEBUG   SenderThread:80736 [sender.py:send():391] send: config
+2024-09-11 22:54:59,963 DEBUG   SenderThread:80736 [sender.py:send():391] send: telemetry
+2024-09-11 22:54:59,963 DEBUG   SenderThread:80736 [sender.py:send():391] send: metric
+2024-09-11 22:54:59,963 DEBUG   SenderThread:80736 [sender.py:send():391] send: telemetry
+2024-09-11 22:54:59,963 DEBUG   SenderThread:80736 [sender.py:send():391] send: metric
+2024-09-11 22:54:59,963 WARNING SenderThread:80736 [sender.py:send_metric():1417] Seen metric with glob (shouldn't happen)
+2024-09-11 22:54:59,963 DEBUG   SenderThread:80736 [sender.py:send():391] send: telemetry
+2024-09-11 22:54:59,963 DEBUG   SenderThread:80736 [sender.py:send():391] send: telemetry
+2024-09-11 22:54:59,963 DEBUG   SenderThread:80736 [sender.py:send():391] send: config
+2024-09-11 22:55:01,948 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 22:55:02,168 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:03,424 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:55:06,953 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 22:55:06,954 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 22:55:08,428 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:55:09,170 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/config.yaml
+2024-09-11 22:55:09,633 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-11 22:55:09,636 DEBUG   SenderThread:80736 [sender.py:send():391] send: metric
+2024-09-11 22:55:09,636 DEBUG   SenderThread:80736 [sender.py:send():391] send: metric
+2024-09-11 22:55:09,636 DEBUG   SenderThread:80736 [sender.py:send():391] send: metric
+2024-09-11 22:55:09,636 DEBUG   SenderThread:80736 [sender.py:send():391] send: metric
+2024-09-11 22:55:09,636 DEBUG   SenderThread:80736 [sender.py:send():391] send: metric
+2024-09-11 22:55:09,636 DEBUG   SenderThread:80736 [sender.py:send():391] send: metric
+2024-09-11 22:55:09,636 DEBUG   SenderThread:80736 [sender.py:send():391] send: metric
+2024-09-11 22:55:09,637 DEBUG   SenderThread:80736 [sender.py:send():391] send: metric
+2024-09-11 22:55:09,637 DEBUG   SenderThread:80736 [sender.py:send():391] send: metric
+2024-09-11 22:55:09,637 DEBUG   SenderThread:80736 [sender.py:send():391] send: history
+2024-09-11 22:55:09,637 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: summary_record
+2024-09-11 22:55:09,638 INFO    SenderThread:80736 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-11 22:55:10,170 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:10,171 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_created():271] file/dir created: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/wandb-summary.json
+2024-09-11 22:55:11,948 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 22:55:12,171 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:13,718 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:55:14,171 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:16,172 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:18,172 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:19,675 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:55:20,173 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:21,948 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 22:55:21,953 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 22:55:21,953 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 22:55:22,173 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:24,174 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:24,895 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:55:26,174 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:28,175 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:29,919 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:55:30,176 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:31,948 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 22:55:32,177 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:34,177 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:35,823 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:55:36,178 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:36,953 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 22:55:36,954 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 22:55:38,178 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:40,179 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:40,832 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:55:41,179 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/config.yaml
+2024-09-11 22:55:41,948 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 22:55:42,179 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:44,180 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:46,052 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:55:46,180 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:47,140 DEBUG   SystemMonitor:80736 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-09-11 22:55:47,144 DEBUG   SenderThread:80736 [sender.py:send():391] send: stats
+2024-09-11 22:55:48,181 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:50,182 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:51,066 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:55:51,948 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 22:55:51,953 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 22:55:51,953 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 22:55:52,182 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:54,183 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:56,077 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:55:56,183 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:55:58,183 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:56:00,184 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:56:01,106 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:56:01,948 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 22:56:02,184 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:56:04,185 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:56:06,136 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:56:06,185 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:56:06,954 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 22:56:06,954 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 22:56:08,186 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:56:10,186 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:56:11,160 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:56:11,948 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 22:56:12,187 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:56:12,429 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-11 22:56:12,430 DEBUG   SenderThread:80736 [sender.py:send():391] send: metric
+2024-09-11 22:56:12,431 DEBUG   SenderThread:80736 [sender.py:send():391] send: metric
+2024-09-11 22:56:12,431 DEBUG   SenderThread:80736 [sender.py:send():391] send: metric
+2024-09-11 22:56:12,431 DEBUG   SenderThread:80736 [sender.py:send():391] send: history
+2024-09-11 22:56:12,431 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: summary_record
+2024-09-11 22:56:12,431 INFO    SenderThread:80736 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-11 22:56:13,187 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/wandb-summary.json
+2024-09-11 22:56:14,188 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:56:15,545 DEBUG   SenderThread:80736 [sender.py:send():391] send: telemetry
+2024-09-11 22:56:15,586 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-11 22:56:15,586 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: summary_record
+2024-09-11 22:56:15,587 INFO    SenderThread:80736 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-11 22:56:15,588 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: summary_record
+2024-09-11 22:56:15,588 INFO    SenderThread:80736 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-11 22:56:15,588 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: summary_record
+2024-09-11 22:56:15,588 INFO    SenderThread:80736 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-11 22:56:15,588 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: summary_record
+2024-09-11 22:56:15,589 INFO    SenderThread:80736 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-11 22:56:15,589 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: summary_record
+2024-09-11 22:56:15,589 INFO    SenderThread:80736 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-11 22:56:15,589 DEBUG   SenderThread:80736 [sender.py:send():391] send: history
+2024-09-11 22:56:15,589 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: summary_record
+2024-09-11 22:56:15,589 INFO    SenderThread:80736 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-11 22:56:16,188 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/wandb-summary.json
+2024-09-11 22:56:16,590 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:56:17,146 DEBUG   SenderThread:80736 [sender.py:send():391] send: stats
+2024-09-11 22:56:18,189 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:56:21,725 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:56:21,948 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 22:56:21,953 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 22:56:21,953 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 22:56:27,724 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:56:31,949 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 22:56:33,724 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:56:36,954 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 22:56:36,954 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 22:56:39,724 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:56:41,949 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 22:56:44,728 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:56:45,194 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/config.yaml
+2024-09-11 22:56:47,148 DEBUG   SenderThread:80736 [sender.py:send():391] send: stats
+2024-09-11 22:56:50,725 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:56:52,973 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 22:56:52,973 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 22:56:53,013 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 22:56:56,325 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:57:00,198 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:57:00,857 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-11 22:57:00,859 DEBUG   SenderThread:80736 [sender.py:send():391] send: metric
+2024-09-11 22:57:00,859 DEBUG   SenderThread:80736 [sender.py:send():391] send: metric
+2024-09-11 22:57:00,859 DEBUG   SenderThread:80736 [sender.py:send():391] send: metric
+2024-09-11 22:57:00,859 DEBUG   SenderThread:80736 [sender.py:send():391] send: metric
+2024-09-11 22:57:00,859 DEBUG   SenderThread:80736 [sender.py:send():391] send: metric
+2024-09-11 22:57:00,859 DEBUG   SenderThread:80736 [sender.py:send():391] send: metric
+2024-09-11 22:57:00,860 DEBUG   SenderThread:80736 [sender.py:send():391] send: metric
+2024-09-11 22:57:00,860 DEBUG   SenderThread:80736 [sender.py:send():391] send: metric
+2024-09-11 22:57:00,860 DEBUG   SenderThread:80736 [sender.py:send():391] send: history
+2024-09-11 22:57:00,860 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: summary_record
+2024-09-11 22:57:00,860 INFO    SenderThread:80736 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-11 22:57:01,198 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/wandb-summary.json
+2024-09-11 22:57:01,861 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:57:02,198 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:57:02,610 DEBUG   SenderThread:80736 [sender.py:send():391] send: telemetry
+2024-09-11 22:57:02,610 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: check_version
+2024-09-11 22:57:02,610 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: check_version
+2024-09-11 22:57:02,657 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: server_info
+2024-09-11 22:57:02,658 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: server_info
+2024-09-11 22:57:02,719 DEBUG   SenderThread:80736 [sender.py:send():391] send: exit
+2024-09-11 22:57:02,719 INFO    SenderThread:80736 [sender.py:send_exit():598] handling exit code: 0
+2024-09-11 22:57:02,719 INFO    SenderThread:80736 [sender.py:send_exit():600] handling runtime: 145
+2024-09-11 22:57:02,719 INFO    SenderThread:80736 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-11 22:57:02,720 INFO    SenderThread:80736 [sender.py:send_exit():606] send defer
+2024-09-11 22:57:02,720 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 22:57:02,720 INFO    HandlerThread:80736 [handler.py:handle_request_defer():184] handle defer: 0
+2024-09-11 22:57:02,720 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: defer
+2024-09-11 22:57:02,720 INFO    SenderThread:80736 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-09-11 22:57:02,720 INFO    SenderThread:80736 [sender.py:transition_state():626] send defer: 1
+2024-09-11 22:57:02,720 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 22:57:02,720 INFO    HandlerThread:80736 [handler.py:handle_request_defer():184] handle defer: 1
+2024-09-11 22:57:02,721 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: defer
+2024-09-11 22:57:02,721 INFO    SenderThread:80736 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-09-11 22:57:02,721 INFO    SenderThread:80736 [sender.py:transition_state():626] send defer: 2
+2024-09-11 22:57:02,721 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 22:57:02,721 INFO    HandlerThread:80736 [handler.py:handle_request_defer():184] handle defer: 2
+2024-09-11 22:57:02,721 INFO    HandlerThread:80736 [system_monitor.py:finish():203] Stopping system monitor
+2024-09-11 22:57:02,721 DEBUG   SystemMonitor:80736 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-09-11 22:57:02,721 INFO    HandlerThread:80736 [interfaces.py:finish():200] Joined cpu monitor
+2024-09-11 22:57:02,722 DEBUG   SystemMonitor:80736 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-09-11 22:57:02,722 INFO    HandlerThread:80736 [interfaces.py:finish():200] Joined disk monitor
+2024-09-11 22:57:03,199 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/wandb-summary.json
+2024-09-11 22:57:03,452 INFO    HandlerThread:80736 [interfaces.py:finish():200] Joined gpu monitor
+2024-09-11 22:57:03,452 INFO    HandlerThread:80736 [interfaces.py:finish():200] Joined memory monitor
+2024-09-11 22:57:03,452 INFO    HandlerThread:80736 [interfaces.py:finish():200] Joined network monitor
+2024-09-11 22:57:03,453 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: defer
+2024-09-11 22:57:03,453 INFO    SenderThread:80736 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-09-11 22:57:03,453 INFO    SenderThread:80736 [sender.py:transition_state():626] send defer: 3
+2024-09-11 22:57:03,453 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 22:57:03,454 INFO    HandlerThread:80736 [handler.py:handle_request_defer():184] handle defer: 3
+2024-09-11 22:57:03,454 DEBUG   SenderThread:80736 [sender.py:send():391] send: stats
+2024-09-11 22:57:03,455 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: defer
+2024-09-11 22:57:03,455 INFO    SenderThread:80736 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-09-11 22:57:03,455 INFO    SenderThread:80736 [sender.py:transition_state():626] send defer: 4
+2024-09-11 22:57:03,455 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 22:57:03,455 INFO    HandlerThread:80736 [handler.py:handle_request_defer():184] handle defer: 4
+2024-09-11 22:57:03,456 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: defer
+2024-09-11 22:57:03,456 INFO    SenderThread:80736 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-09-11 22:57:03,456 INFO    SenderThread:80736 [sender.py:transition_state():626] send defer: 5
+2024-09-11 22:57:03,456 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 22:57:03,456 INFO    HandlerThread:80736 [handler.py:handle_request_defer():184] handle defer: 5
+2024-09-11 22:57:03,456 DEBUG   SenderThread:80736 [sender.py:send():391] send: summary
+2024-09-11 22:57:03,457 INFO    SenderThread:80736 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-11 22:57:03,457 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: defer
+2024-09-11 22:57:03,457 INFO    SenderThread:80736 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-09-11 22:57:03,457 INFO    SenderThread:80736 [sender.py:transition_state():626] send defer: 6
+2024-09-11 22:57:03,458 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 22:57:03,458 INFO    HandlerThread:80736 [handler.py:handle_request_defer():184] handle defer: 6
+2024-09-11 22:57:03,458 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: defer
+2024-09-11 22:57:03,458 INFO    SenderThread:80736 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-09-11 22:57:03,463 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 22:57:03,565 INFO    SenderThread:80736 [sender.py:transition_state():626] send defer: 7
+2024-09-11 22:57:03,566 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 22:57:03,566 INFO    HandlerThread:80736 [handler.py:handle_request_defer():184] handle defer: 7
+2024-09-11 22:57:03,566 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: defer
+2024-09-11 22:57:03,566 INFO    SenderThread:80736 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-09-11 22:57:03,719 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-11 22:57:04,199 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:57:04,199 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/wandb-summary.json
+2024-09-11 22:57:04,199 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/config.yaml
+2024-09-11 22:57:05,777 INFO    SenderThread:80736 [sender.py:transition_state():626] send defer: 8
+2024-09-11 22:57:05,777 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: poll_exit
+2024-09-11 22:57:05,777 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 22:57:05,778 INFO    HandlerThread:80736 [handler.py:handle_request_defer():184] handle defer: 8
+2024-09-11 22:57:05,778 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: defer
+2024-09-11 22:57:05,778 INFO    SenderThread:80736 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-09-11 22:57:05,778 INFO    SenderThread:80736 [job_builder.py:build():443] Attempting to build job artifact
+2024-09-11 22:57:05,779 INFO    SenderThread:80736 [job_builder.py:_get_source_type():572] is repo sourced job
+2024-09-11 22:57:05,796 INFO    SenderThread:80736 [job_builder.py:build():548] adding wandb-job metadata file
+2024-09-11 22:57:05,802 INFO    SenderThread:80736 [sender.py:transition_state():626] send defer: 9
+2024-09-11 22:57:05,802 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 22:57:05,802 INFO    HandlerThread:80736 [handler.py:handle_request_defer():184] handle defer: 9
+2024-09-11 22:57:05,803 DEBUG   SenderThread:80736 [sender.py:send():391] send: artifact
+2024-09-11 22:57:06,200 INFO    Thread-12 :80736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:57:06,309 INFO    wandb-upload_0:80736 [upload_job.py:push():85] Skipped uploading /home/edward/.local/share/wandb/artifacts/staging/tmpjj8i30ag
+2024-09-11 22:57:06,609 INFO    wandb-upload_1:80736 [upload_job.py:push():88] Uploaded file /var/tmp/tmpvz9i9b7p/wandb-job.json
+2024-09-11 22:57:06,719 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-11 22:57:07,258 INFO    SenderThread:80736 [sender.py:send_artifact():1549] sent artifact job-https___github.com_deepsilicon_Sila.git_train_edu_bert.py - {'id': 'QXJ0aWZhY3Q6MTIxNzM1NTMwOQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQ0Nzk3NDAzNg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTIxNjk3NzMxMw==', 'versionIndex': 2}}}
+2024-09-11 22:57:07,258 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: defer
+2024-09-11 22:57:07,258 INFO    SenderThread:80736 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-09-11 22:57:07,258 INFO    SenderThread:80736 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-09-11 22:57:08,201 INFO    SenderThread:80736 [dir_watcher.py:finish():388] scan: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files
+2024-09-11 22:57:08,201 INFO    SenderThread:80736 [dir_watcher.py:finish():402] scan save: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/requirements.txt requirements.txt
+2024-09-11 22:57:08,201 INFO    SenderThread:80736 [dir_watcher.py:finish():402] scan save: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/conda-environment.yaml conda-environment.yaml
+2024-09-11 22:57:08,201 INFO    SenderThread:80736 [dir_watcher.py:finish():402] scan save: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log output.log
+2024-09-11 22:57:08,201 INFO    SenderThread:80736 [dir_watcher.py:finish():402] scan save: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/config.yaml config.yaml
+2024-09-11 22:57:08,201 INFO    SenderThread:80736 [dir_watcher.py:finish():402] scan save: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/wandb-summary.json wandb-summary.json
+2024-09-11 22:57:08,201 INFO    SenderThread:80736 [dir_watcher.py:finish():402] scan save: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/wandb-metadata.json wandb-metadata.json
+2024-09-11 22:57:08,201 INFO    SenderThread:80736 [sender.py:transition_state():626] send defer: 10
+2024-09-11 22:57:08,202 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: poll_exit
+2024-09-11 22:57:08,202 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 22:57:08,202 INFO    HandlerThread:80736 [handler.py:handle_request_defer():184] handle defer: 10
+2024-09-11 22:57:08,209 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: defer
+2024-09-11 22:57:08,209 INFO    SenderThread:80736 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-09-11 22:57:08,209 INFO    SenderThread:80736 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-11 22:57:08,401 INFO    wandb-upload_4:80736 [upload_job.py:push():130] Uploaded file /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/wandb-summary.json
+2024-09-11 22:57:08,409 INFO    wandb-upload_2:80736 [upload_job.py:push():130] Uploaded file /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/requirements.txt
+2024-09-11 22:57:08,423 INFO    wandb-upload_1:80736 [upload_job.py:push():130] Uploaded file /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/config.yaml
+2024-09-11 22:57:08,427 INFO    wandb-upload_0:80736 [upload_job.py:push():130] Uploaded file /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/conda-environment.yaml
+2024-09-11 22:57:08,479 INFO    wandb-upload_3:80736 [upload_job.py:push():130] Uploaded file /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/files/output.log
+2024-09-11 22:57:08,679 INFO    Thread-11 (_thread_body):80736 [sender.py:transition_state():626] send defer: 11
+2024-09-11 22:57:08,679 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 22:57:08,679 INFO    HandlerThread:80736 [handler.py:handle_request_defer():184] handle defer: 11
+2024-09-11 22:57:08,680 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: defer
+2024-09-11 22:57:08,680 INFO    SenderThread:80736 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-09-11 22:57:08,680 INFO    SenderThread:80736 [file_pusher.py:join():175] waiting for file pusher
+2024-09-11 22:57:08,680 INFO    SenderThread:80736 [sender.py:transition_state():626] send defer: 12
+2024-09-11 22:57:08,680 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 22:57:08,680 INFO    HandlerThread:80736 [handler.py:handle_request_defer():184] handle defer: 12
+2024-09-11 22:57:08,681 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: defer
+2024-09-11 22:57:08,681 INFO    SenderThread:80736 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-09-11 22:57:08,681 INFO    SenderThread:80736 [file_stream.py:finish():601] file stream finish called
+2024-09-11 22:57:08,720 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-11 22:57:09,059 INFO    SenderThread:80736 [file_stream.py:finish():605] file stream finish is done
+2024-09-11 22:57:09,060 INFO    SenderThread:80736 [sender.py:transition_state():626] send defer: 13
+2024-09-11 22:57:09,060 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: poll_exit
+2024-09-11 22:57:09,060 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 22:57:09,060 INFO    HandlerThread:80736 [handler.py:handle_request_defer():184] handle defer: 13
+2024-09-11 22:57:09,060 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: defer
+2024-09-11 22:57:09,061 INFO    SenderThread:80736 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-09-11 22:57:09,061 INFO    SenderThread:80736 [sender.py:transition_state():626] send defer: 14
+2024-09-11 22:57:09,061 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 22:57:09,061 INFO    HandlerThread:80736 [handler.py:handle_request_defer():184] handle defer: 14
+2024-09-11 22:57:09,061 DEBUG   SenderThread:80736 [sender.py:send():391] send: final
+2024-09-11 22:57:09,061 DEBUG   SenderThread:80736 [sender.py:send():391] send: footer
+2024-09-11 22:57:09,061 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: defer
+2024-09-11 22:57:09,061 INFO    SenderThread:80736 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-09-11 22:57:09,062 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-11 22:57:09,062 DEBUG   SenderThread:80736 [sender.py:send_request():418] send_request: poll_exit
+2024-09-11 22:57:09,063 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 22:57:09,063 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: get_summary
+2024-09-11 22:57:09,064 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: sampled_history
+2024-09-11 22:57:09,064 DEBUG   HandlerThread:80736 [handler.py:handle_request():158] handle_request: shutdown
+2024-09-11 22:57:09,065 INFO    HandlerThread:80736 [handler.py:finish():884] shutting down handler
+2024-09-11 22:57:10,062 INFO    WriterThread:80736 [datastore.py:close():296] close: /home/edward/Sila/wandb/run-20240911_225436-m0qypl9r/run-m0qypl9r.wandb
+2024-09-11 22:57:10,062 INFO    SenderThread:80736 [sender.py:finish():1631] shutting down sender
+2024-09-11 22:57:10,062 INFO    SenderThread:80736 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-11 22:57:10,063 INFO    SenderThread:80736 [file_pusher.py:join():175] waiting for file pusher

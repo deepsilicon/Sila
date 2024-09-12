@@ -1,0 +1,10 @@
+Map (num_proc=8): 100%|███████████████████████████████████████████████████| 5000/5000 [00:00<00:00, 28949.07 examples/s]
+Traceback (most recent call last):
+  File "/home/edward/Sila/train_edu_bert.py", line 196, in <module>
+    main(args)
+  File "/home/edward/Sila/train_edu_bert.py", line 68, in main
+    args.target_column, ClassLabel(num_classes=5, names=[str(i) for i in range(6)])
+  File "<string>", line 5, in __init__
+  File "/opt/conda/lib/python3.10/site-packages/datasets/features/features.py", line 1005, in __post_init__
+    raise ValueError(
+ValueError: ClassLabel number of names do not match the defined num_classes. Got 6 names VS 5 num_classes

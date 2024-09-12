@@ -1,0 +1,36 @@
+nohup: ignoring input
+wandb: Currently logged in as: ebz (placenta). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.17.9
+wandb: Run data is saved locally in /home/edward/Sila/wandb/run-20240912_005201-e3sp0v7h
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run starcoder
+wandb: ⭐️ View project at https://wandb.ai/placenta/edu_classify
+wandb: 🚀 View run at https://wandb.ai/placenta/edu_classify/runs/e3sp0v7h
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at Snowflake/snowflake-arctic-embed-l and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+wandb: WARNING The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+  0%|          | 0/820 [00:00<?, ?it/s]/opt/conda/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+ 40%|████      | 2/5 [00:21<00:32, 10.81s/it][A
+ 60%|██████    | 3/5 [00:43<00:31, 15.58s/it][A
+ 80%|████████  | 4/5 [01:02<00:16, 16.72s/it][A
+100%|██████████| 5/5 [01:10<00:00, 13.80s/it][A/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+                                       
+                                             [A  0%|          | 0/820 [02:32<?, ?it/s]
+100%|██████████| 5/5 [01:13<00:00, 13.80s/it][A
+                                             [A/opt/conda/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+  0%|          | 1/820 [03:02<41:31:41, 182.54s/it]  0%|          | 2/820 [03:24<20:01:41, 88.14s/it]   0%|          | 3/820 [03:46<13:09:19, 57.97s/it]  0%|          | 4/820 [04:08<9:55:34, 43.79s/it]   1%|          | 5/820 [04:30<8:09:15, 36.02s/it]  1%|          | 6/820 [04:52<7:03:55, 31.25s/it]  1%|          | 7/820 [05:14<6:22:18, 28.21s/it]enta/edu_classify/runs/e3sp0v7h
+wandb: ⭐️ View project at: https://wandb.ai/placenta/edu_classify
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20240912_005201-e3sp0v7h/logs
+wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.

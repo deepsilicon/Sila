@@ -1,0 +1,8 @@
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at Snowflake/snowflake-arctic-embed-l and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Traceback (most recent call last):
+  File "/home/edward/Sila/train_edu_bert.py", line 196, in <module>
+    main(args)
+  File "/home/edward/Sila/train_edu_bert.py", line 95, in main
+    model = AutoModelForSequenceClassification.from_config(config, trust_remote_code=True)
+NameError: name 'config' is not defined

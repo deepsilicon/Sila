@@ -1,0 +1,37 @@
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at Snowflake/snowflake-arctic-embed-l and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+wandb: WARNING The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+  0%|          | 0/820 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/edward/Sila/train_edu_bert.py", line 196, in <module>
+    main(args)
+  File "/home/edward/Sila/train_edu_bert.py", line 150, in main
+    trainer.train()
+  File "/opt/conda/lib/python3.10/site-packages/transformers/trainer.py", line 1929, in train
+    return inner_training_loop(
+  File "/opt/conda/lib/python3.10/site-packages/transformers/trainer.py", line 2205, in _inner_training_loop
+    self._evaluate(trial, ignore_keys_for_eval, skip_scheduler=True)
+  File "/opt/conda/lib/python3.10/site-packages/transformers/trainer.py", line 2761, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+  File "/opt/conda/lib/python3.10/site-packages/transformers/trainer.py", line 3666, in evaluate
+    output = eval_loop(
+  File "/opt/conda/lib/python3.10/site-packages/transformers/trainer.py", line 3857, in evaluation_loop
+    losses, logits, labels = self.prediction_step(model, inputs, prediction_loss_only, ignore_keys=ignore_keys)
+  File "/opt/conda/lib/python3.10/site-packages/transformers/trainer.py", line 4075, in prediction_step
+    loss, outputs = self.compute_loss(model, inputs, return_outputs=True)
+  File "/opt/conda/lib/python3.10/site-packages/transformers/trainer.py", line 3363, in compute_loss
+    outputs = model(**inputs)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 185, in forward
+    replicas = self.replicate(self.module, self.device_ids[:len(inputs)])
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 190, in replicate
+    return replicate(module, device_ids, not torch.is_grad_enabled())
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/parallel/replicate.py", line 110, in replicate
+    param_copies = _broadcast_coalesced_reshape(params, devices, detach)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/parallel/replicate.py", line 79, in _broadcast_coalesced_reshape
+    return comm.broadcast_coalesced(tensors, devices)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/parallel/comm.py", line 58, in broadcast_coalesced
+    return torch._C._broadcast_coalesced(tensors, devices, buffer_size)
+RuntimeError: NCCL Error 1: unhandled cuda error (run with NCCL_DEBUG=INFO for details)

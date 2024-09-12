@@ -1,0 +1,145 @@
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at Snowflake/snowflake-arctic-embed-l and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[34m[1mwandb[39m[22m: [33mWARNING[39m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+  0%|                                                   | 0/50 [00:00<?, ?it/s]/opt/conda/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result)) ?it/s]
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  0%|                                                   | 0/50 [00:09<?, ?it/s]
+Validation Report:
+              precision    recall  f1-score   support
+           0       0.00      0.00      0.00        10
+           1       0.42      1.00      0.59        42
+           2       0.00      0.00      0.00        23
+           3       0.00      0.00      0.00        20
+           4       0.00      0.00      0.00         5
+    accuracy                           0.42       100
+   macro avg       0.08      0.20      0.12       100
+weighted avg       0.18      0.42      0.25       100
+Confusion Matrix:
+[[ 0 10  0  0  0]
+ [ 0 42  0  0  0]
+ [ 0 23  0  0  0]
+ [ 0 20  0  0  0]
+ [ 0  5  0  0  0]]
+  0%|                                                   | 0/50 [00:09<?, ?it/s]/opt/conda/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████████████████████████████████████| 50/50 [01:12<00:00,  1.24s/it]
+{'loss': 0.6182, 'grad_norm': 0.4741530120372772, 'learning_rate': 0.0, 'epoch': 50.0}
+
+100%|██████████████████████████████████████████| 50/50 [01:17<00:00,  1.54s/it]
+/opt/conda/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+  0%|                                                    | 0/1 [00:00<?, ?it/s]/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+100%|████████████████████████████████████████████| 1/1 [00:01<00:00,  1.75s/it]
+Validation Report:
+              precision    recall  f1-score   support
+           0       0.00      0.00      0.00        10
+           1       0.60      0.07      0.13        42
+           2       0.28      0.61      0.38        23
+           3       0.19      0.20      0.20        20
+           4       0.18      0.80      0.30         5
+           5       0.00      0.00      0.00         0
+    accuracy                           0.25       100
+   macro avg       0.21      0.28      0.17       100
+weighted avg       0.36      0.25      0.20       100
+Confusion Matrix:
+[[ 0  2  8  0  0  0]
+ [ 0  3 27 12  0  0]
+ [ 0  0 14  5  3  1]
+ [ 0  0  0  4 15  1]
+ [ 0  0  1  0  4  0]
+ [ 0  0  0  0  0  0]]
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Validation Report:
+              precision    recall  f1-score   support
+           0       0.00      0.00      0.00        10
+           1       0.60      0.07      0.13        42
+           2       0.28      0.61      0.38        23
+           3       0.19      0.20      0.20        20
+           4       0.18      0.80      0.30         5
+           5       0.00      0.00      0.00         0
+    accuracy                           0.25       100
+   macro avg       0.21      0.28      0.17       100
+weighted avg       0.36      0.25      0.20       100
+Confusion Matrix:
+[[ 0  2  8  0  0  0]
+ [ 0  3 27 12  0  0]
+ [ 0  0 14  5  3  1]
+ [ 0  0  0  4 15  1]
+ [ 0  0  1  0  4  0]
+ [ 0  0  0  0  0  0]]
+Confusion Matrix after training:
+[[ 0  2  8  0  0  0]
+ [ 0  3 27 12  0  0]
+ [ 0  0 14  5  3  1]
+ [ 0  0  0  4 15  1]
+ [ 0  0  1  0  4  0]
+ [ 0  0  0  0  0  0]]
+Metrics after training:
+ {'precision': 0.20871572871572874, 'recall': 0.2800207039337474, 'f1_macro': 0.16710657763658499, 'accuracy': 0.25}

@@ -1,0 +1,77 @@
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at Snowflake/snowflake-arctic-embed-l and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+
+
+
+
+
+Map: 100%|████████████████████████████████████████████████████████████████| 10000/10000 [00:11<00:00, 874.56 examples/s]
+[34m[1mwandb[39m[22m: [33mWARNING[39m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+  0%|                                                                                           | 0/539 [00:00<?, ?it/s]/opt/conda/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))██████████████████| 2/2 [00:01<00:00,  1.16it/s]
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  0%|                                                                                           | 0/539 [00:24<?, ?it/s]
+Validation Report:
+              precision    recall  f1-score   support
+           0       0.00      1.00      0.00        14
+           1       0.00      0.00      0.00       934
+           2       0.00      0.00      0.00      4272
+           3       0.00      0.00      0.00      2281
+           4       0.00      0.00      0.00      2123
+           5       0.00      0.00      0.00       376
+    accuracy                           0.00     10000
+   macro avg       0.00      0.17      0.00     10000
+weighted avg       0.00      0.00      0.00     10000
+Confusion Matrix:
+[[  14    0    0    0    0    0]
+ [ 934    0    0    0    0    0]
+ [4271    1    0    0    0    0]
+ [2281    0    0    0    0    0]
+ [2123    0    0    0    0    0]
+ [ 376    0    0    0    0    0]]
+  0%|                                                                                           | 0/539 [00:24<?, ?it/s]/opt/conda/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+  1%|█                                                                                | 7/539 [01:44<1:46:27, 12.01s/it]Traceback (most recent call last):
+  File "/home/edward/Sila/train_edu_bert.py", line 192, in <module>
+    main(args)
+  File "/home/edward/Sila/train_edu_bert.py", line 146, in main
+    trainer.train()
+  File "/opt/conda/lib/python3.10/site-packages/transformers/trainer.py", line 1929, in train
+    return inner_training_loop(
+  File "/opt/conda/lib/python3.10/site-packages/transformers/trainer.py", line 2236, in _inner_training_loop
+    for step, inputs in enumerate(epoch_iterator):
+  File "/opt/conda/lib/python3.10/site-packages/accelerate/data_loader.py", line 561, in __iter__
+    next_batch = next(dataloader_iter)
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 673, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+  File "/opt/conda/lib/python3.10/site-packages/transformers/data/data_collator.py", line 271, in __call__
+    batch = pad_without_fast_tokenizer_warning(
+  File "/opt/conda/lib/python3.10/site-packages/transformers/data/data_collator.py", line 66, in pad_without_fast_tokenizer_warning
+    padded = tokenizer.pad(*pad_args, **pad_kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3560, in pad
+    return BatchEncoding(batch_outputs, tensor_type=return_tensors)
+  File "/opt/conda/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 227, in __init__
+    self.convert_to_tensors(tensor_type=tensor_type, prepend_batch_axis=prepend_batch_axis)
+  File "/opt/conda/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 762, in convert_to_tensors
+    tensor = as_tensor(value)
+  File "/opt/conda/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 724, in as_tensor
+    return torch.tensor(value)
+KeyboardInterrupt

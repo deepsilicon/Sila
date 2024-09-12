@@ -1,0 +1,1032 @@
+2024-09-11 23:11:46,227 INFO    StreamThr :86449 [internal.py:wandb_internal():85] W&B internal server running at pid: 86449, started at: 2024-09-11 23:11:46.227428
+2024-09-11 23:11:46,230 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status
+2024-09-11 23:11:46,231 INFO    WriterThread:86449 [datastore.py:open_for_write():87] open: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/run-xswm9grx.wandb
+2024-09-11 23:11:46,231 DEBUG   SenderThread:86449 [sender.py:send():391] send: header
+2024-09-11 23:11:46,231 DEBUG   SenderThread:86449 [sender.py:send():391] send: run
+2024-09-11 23:11:46,381 INFO    SenderThread:86449 [dir_watcher.py:__init__():211] watching files in: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files
+2024-09-11 23:11:46,382 INFO    SenderThread:86449 [sender.py:_start_run_threads():1200] run started: xswm9grx with start time 1726096306.227039
+2024-09-11 23:11:46,387 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: run_start
+2024-09-11 23:11:56,172 DEBUG   HandlerThread:86449 [system_info.py:__init__():26] System info init
+2024-09-11 23:11:56,172 DEBUG   HandlerThread:86449 [system_info.py:__init__():41] System info init done
+2024-09-11 23:11:56,172 INFO    HandlerThread:86449 [system_monitor.py:start():194] Starting system monitor
+2024-09-11 23:11:56,173 INFO    SystemMonitor:86449 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-09-11 23:11:56,173 INFO    HandlerThread:86449 [system_monitor.py:probe():214] Collecting system info
+2024-09-11 23:11:56,174 INFO    SystemMonitor:86449 [interfaces.py:start():188] Started cpu monitoring
+2024-09-11 23:11:56,174 INFO    SystemMonitor:86449 [interfaces.py:start():188] Started disk monitoring
+2024-09-11 23:11:56,175 INFO    SystemMonitor:86449 [interfaces.py:start():188] Started gpu monitoring
+2024-09-11 23:11:56,177 INFO    SystemMonitor:86449 [interfaces.py:start():188] Started memory monitoring
+2024-09-11 23:11:56,177 INFO    SystemMonitor:86449 [interfaces.py:start():188] Started network monitoring
+2024-09-11 23:11:56,225 DEBUG   HandlerThread:86449 [system_info.py:probe():152] Probing system
+2024-09-11 23:11:56,226 DEBUG   HandlerThread:86449 [system_info.py:_probe_git():137] Probing git
+2024-09-11 23:11:56,230 DEBUG   HandlerThread:86449 [system_info.py:_probe_git():145] Probing git done
+2024-09-11 23:11:56,230 DEBUG   HandlerThread:86449 [system_info.py:probe():200] Probing system done
+2024-09-11 23:11:56,230 DEBUG   HandlerThread:86449 [system_monitor.py:probe():223] {'os': 'Linux-5.10.0-31-cloud-amd64-x86_64-with-glibc2.31', 'python': '3.10.4', 'heartbeatAt': '2024-09-11T23:11:56.225289', 'startedAt': '2024-09-11T23:11:46.224254', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/edward/Sila/train_edu_bert.py', 'codePathLocal': 'train_edu_bert.py', 'codePath': 'train_edu_bert.py', 'git': {'remote': 'https://github.com/deepsilicon/Sila.git', 'commit': '8d22f82bdc75c2e0556e969a3b92136cd1d73b66'}, 'email': None, 'root': '/home/edward/Sila', 'host': 'instance-h100', 'username': 'edward', 'executable': '/opt/conda/bin/python', 'cpu_count': 104, 'cpu_count_logical': 208, 'cpu_freq': {'current': 2699.99800000001, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}, {'current': 2699.998, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 4921.297119140625, 'used': 62.301055908203125}}, 'gpu': 'NVIDIA H100 80GB HBM3', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}], 'memory': {'total': 1842.601634979248}}
+2024-09-11 23:11:56,230 INFO    HandlerThread:86449 [system_monitor.py:probe():224] Finished collecting system info
+2024-09-11 23:11:56,230 INFO    HandlerThread:86449 [system_monitor.py:probe():227] Publishing system info
+2024-09-11 23:11:56,230 DEBUG   HandlerThread:86449 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-09-11 23:11:56,436 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_created():271] file/dir created: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/conda-environment.yaml
+2024-09-11 23:12:00,854 DEBUG   HandlerThread:86449 [system_info.py:_save_conda():224] Saving conda packages done
+2024-09-11 23:12:00,856 INFO    HandlerThread:86449 [system_monitor.py:probe():229] Finished publishing system info
+2024-09-11 23:12:00,857 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: keepalive
+2024-09-11 23:12:00,857 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:12:00,857 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:12:00,857 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: keepalive
+2024-09-11 23:12:00,858 DEBUG   SenderThread:86449 [sender.py:send():391] send: files
+2024-09-11 23:12:00,858 INFO    SenderThread:86449 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-09-11 23:12:00,982 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: python_packages
+2024-09-11 23:12:00,982 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:12:00,983 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: python_packages
+2024-09-11 23:12:00,983 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:12:00,985 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:12:01,117 DEBUG   SenderThread:86449 [sender.py:send():391] send: telemetry
+2024-09-11 23:12:01,139 INFO    wandb-upload_0:86449 [upload_job.py:push():130] Uploaded file /var/tmp/tmpfn35m764wandb/d5x0mrhf-wandb-metadata.json
+2024-09-11 23:12:01,437 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/conda-environment.yaml
+2024-09-11 23:12:01,437 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_created():271] file/dir created: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/requirements.txt
+2024-09-11 23:12:01,437 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_created():271] file/dir created: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/wandb-metadata.json
+2024-09-11 23:12:02,118 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:12:03,437 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_created():271] file/dir created: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:05,438 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:07,201 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:12:07,439 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:09,439 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:10,997 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:12:11,440 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:12,471 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:12:13,440 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:15,441 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:15,986 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:12:15,986 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:12:17,442 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:18,161 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:12:18,442 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/config.yaml
+2024-09-11 23:12:19,442 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:20,997 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:12:21,443 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:23,443 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:23,954 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:12:25,444 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:27,445 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:29,445 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:29,560 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:12:30,986 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:12:30,986 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:12:30,996 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:12:31,446 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:33,446 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:35,092 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:12:35,447 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:37,448 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:39,448 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:40,117 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:12:40,997 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:12:41,449 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:43,449 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:45,450 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:45,805 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:12:45,986 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:12:45,986 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:12:47,450 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:49,451 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:50,997 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:12:50,998 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:12:51,451 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:53,452 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:55,453 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:56,000 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:12:56,178 DEBUG   SystemMonitor:86449 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-09-11 23:12:56,180 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:12:57,453 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:12:59,454 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:00,986 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:13:00,987 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:13:00,997 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:13:01,153 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:13:01,454 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:03,455 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:05,455 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:06,180 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:13:07,456 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:09,456 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:10,998 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:13:11,457 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:11,666 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:13:13,458 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:15,458 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:15,989 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:13:15,990 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:13:17,098 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:13:17,459 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:19,459 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:20,998 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:13:21,460 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:22,487 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:13:23,460 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:25,461 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:26,185 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:13:27,462 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:28,182 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:13:29,462 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:30,989 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:13:30,990 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:13:30,997 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:13:31,463 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:33,463 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:33,752 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:13:35,464 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:37,465 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:39,460 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:13:39,465 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:40,998 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:13:41,466 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:43,466 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:45,104 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:13:45,467 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:45,990 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:13:45,990 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:13:47,468 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:49,468 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:50,881 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:13:51,005 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:13:51,469 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:53,469 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:55,470 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:56,109 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:13:56,184 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:13:57,470 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:13:59,471 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:00,992 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:14:00,992 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:14:01,007 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:14:01,472 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:02,083 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:14:03,472 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:05,473 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:07,473 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:07,573 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:14:09,474 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:11,007 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:14:11,474 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:13,088 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:14:13,475 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:15,476 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:15,992 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:14:15,992 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:14:17,476 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:18,783 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:14:19,477 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:21,007 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:14:21,477 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:23,478 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:24,430 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:14:25,478 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:26,186 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:14:27,479 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:29,479 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:30,160 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:14:30,992 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:14:30,992 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:14:31,007 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:14:31,480 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:33,481 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:35,481 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:35,846 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:14:37,482 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:39,482 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:41,008 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:14:41,086 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:14:41,483 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:43,483 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:45,484 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:45,999 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:14:46,000 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:14:46,168 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:14:47,484 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:49,485 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:51,008 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:14:51,482 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:14:51,486 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:53,486 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:55,487 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:56,190 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:14:56,969 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:14:57,487 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:14:59,488 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:01,000 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:15:01,000 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:15:01,007 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:15:01,488 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:02,643 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:15:03,489 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:05,489 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:07,490 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:08,252 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:15:09,491 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:11,008 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:15:11,491 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:13,492 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:13,701 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:15:15,492 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:16,006 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:15:16,006 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:15:17,493 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:19,313 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:15:19,493 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:21,008 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:15:21,494 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:23,495 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:24,461 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:15:25,495 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:26,189 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:15:27,496 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:29,496 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:29,911 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:15:31,006 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:15:31,006 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:15:31,008 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:15:31,497 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:33,498 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:35,498 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:35,623 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:15:37,499 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:39,499 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:41,008 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:15:41,123 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:15:41,500 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:43,500 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:45,501 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:46,006 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:15:46,006 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:15:46,236 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:15:47,502 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:49,502 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:51,009 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:15:51,236 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:15:51,503 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:53,503 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:55,504 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:56,191 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:15:56,236 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:15:57,505 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:15:59,505 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:01,006 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:16:01,007 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:16:01,008 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:16:01,237 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:16:01,506 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:03,507 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:05,507 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:06,626 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:16:07,508 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:09,508 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:11,009 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:16:11,509 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:12,236 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:16:13,509 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:15,510 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:16,006 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:16:16,007 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:16:17,510 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:17,661 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:16:19,511 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:21,009 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:16:21,512 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:23,236 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:16:23,512 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:25,513 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:26,193 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:16:27,513 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:28,725 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:16:29,514 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:31,009 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:16:31,009 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:16:31,009 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:16:31,515 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:33,515 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:34,434 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:16:35,516 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:37,516 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:39,517 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:39,541 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:16:41,009 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:16:41,517 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:43,518 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:45,138 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:16:45,518 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:46,009 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:16:46,009 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:16:47,519 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:49,520 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:50,794 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:16:51,009 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:16:51,520 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:53,521 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:55,521 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:56,195 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:16:56,196 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:16:57,522 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:16:59,522 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:01,009 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:17:01,009 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:17:01,010 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:17:01,235 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:17:01,523 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:03,524 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:05,524 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:06,245 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:17:07,525 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:09,525 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:11,009 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:17:11,421 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:17:11,526 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:13,526 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:15,527 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:16,009 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:17:16,009 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:17:17,109 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:17:17,528 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:19,528 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:21,010 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:17:21,529 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:22,738 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:17:23,529 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:25,530 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:26,199 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:17:27,530 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:28,382 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:17:29,531 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:31,009 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:17:31,009 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:17:31,010 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:17:31,532 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:33,533 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:33,992 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:17:35,533 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:37,533 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:39,534 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:39,952 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:17:41,010 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:17:41,535 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:43,535 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:45,536 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:45,883 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:17:46,009 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:17:46,009 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:17:47,536 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:49,537 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:51,010 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:17:51,261 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:17:51,538 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:53,538 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:55,539 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:56,198 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:17:57,109 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:17:57,539 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:17:59,540 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:01,010 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:18:01,010 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:18:01,010 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:18:01,540 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:02,597 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:18:03,541 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:05,541 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:07,542 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:08,328 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:18:09,543 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:11,010 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:18:11,543 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:13,544 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:13,930 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:18:15,544 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:16,010 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:18:16,010 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:18:17,545 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:19,546 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:19,641 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:18:21,011 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:18:21,546 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:23,547 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:25,226 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:18:25,547 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:26,200 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:18:27,548 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:29,549 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:30,901 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:18:31,018 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:18:31,018 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:18:31,019 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:18:31,551 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:33,552 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:35,555 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:36,263 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:18:37,555 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:39,556 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:41,018 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:18:41,526 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:18:41,556 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:43,557 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:45,557 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:46,018 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:18:46,018 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:18:47,044 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:18:47,558 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:49,559 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:51,019 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:18:51,559 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:52,587 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:18:53,560 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:55,560 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:56,205 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:18:57,561 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:18:58,481 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:18:59,562 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:01,018 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:19:01,018 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:19:01,019 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:19:01,562 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:03,563 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:04,127 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:19:05,564 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:07,564 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:09,565 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:09,711 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:19:11,019 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:19:11,565 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:13,566 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:15,355 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:19:15,567 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:16,018 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:19:16,019 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:19:17,567 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:19,568 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:20,816 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:19:21,019 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:19:21,568 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:23,569 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:25,569 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:26,204 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:19:26,205 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:19:27,570 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:29,571 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:31,018 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:19:31,019 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:19:31,021 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:19:31,271 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:19:31,571 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:33,572 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:35,572 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:36,271 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:19:37,573 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:39,574 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:41,022 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:19:41,574 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:42,233 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:19:43,575 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:45,575 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:46,019 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:19:46,019 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:19:47,576 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:47,745 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:19:49,577 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:51,022 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:19:51,577 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:53,366 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:19:53,578 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:55,578 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:56,205 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:19:57,579 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:19:58,993 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:19:59,579 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:01,019 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:20:01,019 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:20:01,022 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:20:01,580 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:03,581 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:04,710 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:20:05,581 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:07,582 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:09,583 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:10,193 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:20:11,023 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:20:11,583 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:13,584 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:15,584 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:15,665 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:20:16,019 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:20:16,019 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:20:17,585 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:19,586 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:21,023 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:20:21,163 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:20:21,586 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:23,587 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:25,587 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:26,207 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:20:26,208 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:20:27,588 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:29,589 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:31,019 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:20:31,019 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:20:31,023 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:20:31,280 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:20:31,589 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:33,590 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:35,591 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:36,281 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:20:37,592 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:39,592 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:41,023 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:20:41,281 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:20:41,593 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:43,593 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:45,594 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:46,019 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:20:46,020 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:20:47,281 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:20:47,595 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:49,595 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:51,023 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:20:51,596 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:53,030 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:20:53,596 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:55,597 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:56,209 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:20:57,598 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:20:58,659 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:20:59,598 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:01,019 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:21:01,020 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:21:01,023 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:21:01,599 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:03,599 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:04,238 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:21:05,600 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:07,601 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:09,601 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:09,653 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:21:11,023 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:21:11,602 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:13,603 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:15,385 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:21:15,603 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:16,020 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:21:16,020 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:21:17,604 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:19,604 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:20,957 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:21:21,026 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:21:21,605 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:23,605 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:25,606 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:26,214 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:21:26,215 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:21:27,607 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:29,607 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:31,019 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:21:31,020 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:21:31,026 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:21:31,282 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:21:31,608 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:33,608 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:35,609 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:36,282 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:21:37,610 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:39,610 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:41,027 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:21:41,611 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:41,666 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:21:43,611 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:45,612 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:46,062 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:21:46,062 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:21:47,283 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:21:47,612 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:49,613 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:51,027 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:21:51,614 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:52,643 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:21:53,614 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:55,615 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:56,213 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:21:57,615 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:21:58,376 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:21:59,616 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:01,025 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:22:01,025 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:22:01,027 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:22:01,617 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:03,617 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:04,070 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:22:05,618 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:07,618 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:09,619 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:09,698 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:22:11,027 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:22:11,620 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:13,620 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:15,259 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:22:15,621 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:16,025 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:22:16,026 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:22:17,621 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:19,622 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:20,931 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:22:21,084 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:22:21,623 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:23,623 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:25,624 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:26,214 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:22:26,216 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:22:27,624 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:29,625 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:31,036 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:22:31,036 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:22:31,089 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:22:31,283 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:22:31,626 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:33,626 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:35,627 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:36,284 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:22:37,628 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:39,628 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:41,090 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:22:41,629 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:42,284 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:22:43,629 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:45,630 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:46,036 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:22:46,037 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:22:47,631 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:47,990 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:22:49,631 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:51,090 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:22:51,632 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:53,632 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:22:53,633 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:55,633 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:56,216 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:22:57,634 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:22:59,219 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:22:59,634 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:01,036 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:23:01,037 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:23:01,090 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:23:01,635 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:03,636 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:04,834 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:23:05,636 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:07,637 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:09,638 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:10,484 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:23:11,090 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:23:11,638 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:13,639 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:15,639 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:16,036 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:23:16,037 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:23:16,169 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:23:17,640 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:19,641 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:21,090 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:23:21,285 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:23:21,641 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:23,642 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:25,642 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:26,218 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:23:26,287 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:23:27,643 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:29,644 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:31,036 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:23:31,037 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:23:31,090 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:23:31,644 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:32,135 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:23:33,645 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:35,645 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:37,646 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:37,919 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:23:39,646 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:41,090 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:23:41,647 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:43,494 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:23:43,648 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:45,649 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:46,037 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:23:46,037 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:23:47,649 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:49,315 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:23:49,650 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:51,091 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:23:51,650 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:53,651 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:55,036 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:23:55,652 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:56,223 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:23:57,652 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:23:59,653 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:00,691 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:24:01,037 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:24:01,037 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:24:01,090 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:24:01,653 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:03,654 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:05,655 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:06,266 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:24:07,655 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:09,656 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:11,091 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:24:11,288 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:24:11,656 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:13,657 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:15,658 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:16,037 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:24:16,037 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:24:16,288 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:24:17,658 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:19,659 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:21,091 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:24:21,326 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:24:21,659 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:23,660 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:25,660 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:26,222 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:24:26,893 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:24:27,661 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:29,662 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:31,037 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:24:31,038 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:24:31,091 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:24:31,662 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:32,334 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:24:33,663 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:35,663 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:37,664 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:37,972 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:24:39,664 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:41,091 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:24:41,665 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:43,003 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:24:43,666 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:45,666 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:46,037 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:24:46,038 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:24:47,667 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:48,555 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:24:49,667 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:51,091 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:24:51,668 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:53,669 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:53,875 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:24:55,669 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:56,223 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:24:57,670 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:24:59,604 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:24:59,670 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:01,037 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:25:01,038 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:25:01,091 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:25:01,671 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:03,672 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:05,392 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:25:05,672 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:07,673 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:09,673 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:11,108 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:25:11,126 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:25:11,674 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:13,675 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:15,675 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:16,038 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:25:16,038 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:25:16,203 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:25:17,676 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:19,676 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:21,097 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:25:21,304 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:25:21,677 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:23,678 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:25,678 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:26,225 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:25:26,324 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:25:27,679 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:29,679 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:31,038 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:25:31,038 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:25:31,097 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:25:31,627 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:25:31,680 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:33,680 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:35,681 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:37,329 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:25:37,682 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:39,682 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:41,107 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:25:41,683 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:42,667 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:25:43,683 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:45,684 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:46,039 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:25:46,039 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:25:47,685 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:48,249 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:25:49,685 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:51,107 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:25:51,686 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:53,687 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:54,095 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:25:55,687 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:56,227 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:25:57,688 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:25:59,649 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:25:59,688 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:26:01,039 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:26:01,039 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:26:01,107 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:26:01,689 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:26:03,689 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:26:05,379 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:26:05,690 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:26:07,691 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:26:09,691 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:26:10,966 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:26:11,107 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:26:11,692 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:26:13,692 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:26:15,693 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:26:16,039 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:26:16,040 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:26:16,145 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:26:17,694 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:26:19,694 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:26:21,108 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:26:21,299 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:26:21,724 DEBUG   SenderThread:86449 [sender.py:send():391] send: config
+2024-09-11 23:26:21,725 DEBUG   SenderThread:86449 [sender.py:send():391] send: telemetry
+2024-09-11 23:26:21,725 DEBUG   SenderThread:86449 [sender.py:send():391] send: metric
+2024-09-11 23:26:21,725 DEBUG   SenderThread:86449 [sender.py:send():391] send: telemetry
+2024-09-11 23:26:21,725 DEBUG   SenderThread:86449 [sender.py:send():391] send: metric
+2024-09-11 23:26:21,725 WARNING SenderThread:86449 [sender.py:send_metric():1417] Seen metric with glob (shouldn't happen)
+2024-09-11 23:26:21,725 DEBUG   SenderThread:86449 [sender.py:send():391] send: telemetry
+2024-09-11 23:26:21,725 DEBUG   SenderThread:86449 [sender.py:send():391] send: telemetry
+2024-09-11 23:26:21,725 DEBUG   SenderThread:86449 [sender.py:send():391] send: config
+2024-09-11 23:26:23,695 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:26:26,228 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:26:27,230 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:26:32,824 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:26:33,698 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/config.yaml
+2024-09-11 23:26:34,260 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:26:34,449 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:26:34,450 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:26:38,616 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:26:43,271 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:26:44,250 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:26:47,410 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-11 23:26:47,411 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: stop_status
+2024-09-11 23:26:50,209 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:26:53,228 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:26:56,209 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:26:56,232 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:26:58,827 DEBUG   SenderThread:86449 [sender.py:send():391] send: exit
+2024-09-11 23:26:58,827 INFO    SenderThread:86449 [sender.py:send_exit():598] handling exit code: 1
+2024-09-11 23:26:58,828 INFO    SenderThread:86449 [sender.py:send_exit():600] handling runtime: 912
+2024-09-11 23:26:58,828 INFO    SenderThread:86449 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-11 23:26:58,828 INFO    SenderThread:86449 [sender.py:send_exit():606] send defer
+2024-09-11 23:26:58,828 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 23:26:58,828 INFO    HandlerThread:86449 [handler.py:handle_request_defer():184] handle defer: 0
+2024-09-11 23:26:58,829 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: defer
+2024-09-11 23:26:58,829 INFO    SenderThread:86449 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-09-11 23:26:58,829 INFO    SenderThread:86449 [sender.py:transition_state():626] send defer: 1
+2024-09-11 23:26:58,829 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 23:26:58,829 INFO    HandlerThread:86449 [handler.py:handle_request_defer():184] handle defer: 1
+2024-09-11 23:26:58,829 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: defer
+2024-09-11 23:26:58,829 INFO    SenderThread:86449 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-09-11 23:26:58,830 INFO    SenderThread:86449 [sender.py:transition_state():626] send defer: 2
+2024-09-11 23:26:58,830 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 23:26:58,830 INFO    HandlerThread:86449 [handler.py:handle_request_defer():184] handle defer: 2
+2024-09-11 23:26:58,830 INFO    HandlerThread:86449 [system_monitor.py:finish():203] Stopping system monitor
+2024-09-11 23:26:58,830 INFO    HandlerThread:86449 [interfaces.py:finish():200] Joined cpu monitor
+2024-09-11 23:26:58,830 INFO    HandlerThread:86449 [interfaces.py:finish():200] Joined disk monitor
+2024-09-11 23:26:58,831 DEBUG   SystemMonitor:86449 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-09-11 23:26:58,831 DEBUG   SystemMonitor:86449 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-09-11 23:26:59,705 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:26:59,706 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_created():271] file/dir created: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/wandb-summary.json
+2024-09-11 23:26:59,742 INFO    HandlerThread:86449 [interfaces.py:finish():200] Joined gpu monitor
+2024-09-11 23:26:59,742 INFO    HandlerThread:86449 [interfaces.py:finish():200] Joined memory monitor
+2024-09-11 23:26:59,742 INFO    HandlerThread:86449 [interfaces.py:finish():200] Joined network monitor
+2024-09-11 23:26:59,743 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: defer
+2024-09-11 23:26:59,743 INFO    SenderThread:86449 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-09-11 23:26:59,743 INFO    SenderThread:86449 [sender.py:transition_state():626] send defer: 3
+2024-09-11 23:26:59,744 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 23:26:59,744 INFO    HandlerThread:86449 [handler.py:handle_request_defer():184] handle defer: 3
+2024-09-11 23:26:59,746 DEBUG   SenderThread:86449 [sender.py:send():391] send: stats
+2024-09-11 23:26:59,747 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: defer
+2024-09-11 23:26:59,747 INFO    SenderThread:86449 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-09-11 23:26:59,747 INFO    SenderThread:86449 [sender.py:transition_state():626] send defer: 4
+2024-09-11 23:26:59,747 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 23:26:59,747 INFO    HandlerThread:86449 [handler.py:handle_request_defer():184] handle defer: 4
+2024-09-11 23:26:59,747 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: defer
+2024-09-11 23:26:59,748 INFO    SenderThread:86449 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-09-11 23:26:59,748 INFO    SenderThread:86449 [sender.py:transition_state():626] send defer: 5
+2024-09-11 23:26:59,748 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 23:26:59,748 INFO    HandlerThread:86449 [handler.py:handle_request_defer():184] handle defer: 5
+2024-09-11 23:26:59,748 DEBUG   SenderThread:86449 [sender.py:send():391] send: summary
+2024-09-11 23:26:59,748 INFO    SenderThread:86449 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-11 23:26:59,748 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: defer
+2024-09-11 23:26:59,748 INFO    SenderThread:86449 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-09-11 23:26:59,748 INFO    SenderThread:86449 [sender.py:transition_state():626] send defer: 6
+2024-09-11 23:26:59,749 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 23:26:59,749 INFO    HandlerThread:86449 [handler.py:handle_request_defer():184] handle defer: 6
+2024-09-11 23:26:59,749 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: defer
+2024-09-11 23:26:59,749 INFO    SenderThread:86449 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-09-11 23:26:59,749 INFO    SenderThread:86449 [sender.py:transition_state():626] send defer: 7
+2024-09-11 23:26:59,749 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: status_report
+2024-09-11 23:26:59,749 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 23:26:59,749 INFO    HandlerThread:86449 [handler.py:handle_request_defer():184] handle defer: 7
+2024-09-11 23:26:59,749 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: defer
+2024-09-11 23:26:59,749 INFO    SenderThread:86449 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-09-11 23:26:59,827 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-11 23:27:00,706 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/wandb-summary.json
+2024-09-11 23:27:01,703 INFO    SenderThread:86449 [sender.py:transition_state():626] send defer: 8
+2024-09-11 23:27:01,703 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: poll_exit
+2024-09-11 23:27:01,703 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 23:27:01,704 INFO    HandlerThread:86449 [handler.py:handle_request_defer():184] handle defer: 8
+2024-09-11 23:27:01,704 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: defer
+2024-09-11 23:27:01,704 INFO    SenderThread:86449 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-09-11 23:27:01,704 INFO    SenderThread:86449 [job_builder.py:build():443] Attempting to build job artifact
+2024-09-11 23:27:01,705 INFO    SenderThread:86449 [job_builder.py:_get_source_type():572] is repo sourced job
+2024-09-11 23:27:01,706 INFO    Thread-12 :86449 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:27:01,720 INFO    SenderThread:86449 [job_builder.py:build():548] adding wandb-job metadata file
+2024-09-11 23:27:01,724 INFO    SenderThread:86449 [sender.py:transition_state():626] send defer: 9
+2024-09-11 23:27:01,724 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 23:27:01,724 INFO    HandlerThread:86449 [handler.py:handle_request_defer():184] handle defer: 9
+2024-09-11 23:27:01,724 DEBUG   SenderThread:86449 [sender.py:send():391] send: artifact
+2024-09-11 23:27:01,828 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-11 23:27:02,153 INFO    wandb-upload_1:86449 [upload_job.py:push():85] Skipped uploading /home/edward/.local/share/wandb/artifacts/staging/tmp2iwkfspf
+2024-09-11 23:27:02,247 INFO    wandb-upload_0:86449 [upload_job.py:push():88] Uploaded file /var/tmp/tmpd4l_j_6w/wandb-job.json
+2024-09-11 23:27:02,893 INFO    SenderThread:86449 [sender.py:send_artifact():1549] sent artifact job-https___github.com_deepsilicon_Sila.git_train_edu_bert.py - {'id': 'QXJ0aWZhY3Q6MTIxNzQ2NjkzOQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQ0Nzk3NDAzNg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTIxNzM4MTM3NA==', 'versionIndex': 5}}}
+2024-09-11 23:27:02,893 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: defer
+2024-09-11 23:27:02,893 INFO    SenderThread:86449 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-09-11 23:27:02,893 INFO    SenderThread:86449 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-09-11 23:27:03,707 INFO    SenderThread:86449 [dir_watcher.py:finish():388] scan: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files
+2024-09-11 23:27:03,707 INFO    SenderThread:86449 [dir_watcher.py:finish():402] scan save: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/requirements.txt requirements.txt
+2024-09-11 23:27:03,707 INFO    SenderThread:86449 [dir_watcher.py:finish():402] scan save: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/conda-environment.yaml conda-environment.yaml
+2024-09-11 23:27:03,708 INFO    SenderThread:86449 [dir_watcher.py:finish():402] scan save: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log output.log
+2024-09-11 23:27:03,708 INFO    SenderThread:86449 [dir_watcher.py:finish():402] scan save: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/config.yaml config.yaml
+2024-09-11 23:27:03,708 INFO    SenderThread:86449 [dir_watcher.py:finish():402] scan save: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/wandb-summary.json wandb-summary.json
+2024-09-11 23:27:03,708 INFO    SenderThread:86449 [dir_watcher.py:finish():402] scan save: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/wandb-metadata.json wandb-metadata.json
+2024-09-11 23:27:03,708 INFO    SenderThread:86449 [sender.py:transition_state():626] send defer: 10
+2024-09-11 23:27:03,709 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: poll_exit
+2024-09-11 23:27:03,709 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 23:27:03,712 INFO    HandlerThread:86449 [handler.py:handle_request_defer():184] handle defer: 10
+2024-09-11 23:27:03,715 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: defer
+2024-09-11 23:27:03,715 INFO    SenderThread:86449 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-09-11 23:27:03,715 INFO    SenderThread:86449 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-11 23:27:03,829 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-11 23:27:03,829 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: poll_exit
+2024-09-11 23:27:03,900 INFO    wandb-upload_1:86449 [upload_job.py:push():130] Uploaded file /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/requirements.txt
+2024-09-11 23:27:03,923 INFO    wandb-upload_0:86449 [upload_job.py:push():130] Uploaded file /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/output.log
+2024-09-11 23:27:03,932 INFO    wandb-upload_4:86449 [upload_job.py:push():130] Uploaded file /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/wandb-summary.json
+2024-09-11 23:27:03,936 INFO    wandb-upload_3:86449 [upload_job.py:push():130] Uploaded file /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/config.yaml
+2024-09-11 23:27:03,943 INFO    wandb-upload_2:86449 [upload_job.py:push():130] Uploaded file /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/files/conda-environment.yaml
+2024-09-11 23:27:04,144 INFO    Thread-11 (_thread_body):86449 [sender.py:transition_state():626] send defer: 11
+2024-09-11 23:27:04,144 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 23:27:04,144 INFO    HandlerThread:86449 [handler.py:handle_request_defer():184] handle defer: 11
+2024-09-11 23:27:04,145 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: defer
+2024-09-11 23:27:04,145 INFO    SenderThread:86449 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-09-11 23:27:04,145 INFO    SenderThread:86449 [file_pusher.py:join():175] waiting for file pusher
+2024-09-11 23:27:04,145 INFO    SenderThread:86449 [sender.py:transition_state():626] send defer: 12
+2024-09-11 23:27:04,145 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 23:27:04,145 INFO    HandlerThread:86449 [handler.py:handle_request_defer():184] handle defer: 12
+2024-09-11 23:27:04,146 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: defer
+2024-09-11 23:27:04,146 INFO    SenderThread:86449 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-09-11 23:27:04,146 INFO    SenderThread:86449 [file_stream.py:finish():601] file stream finish called
+2024-09-11 23:27:04,445 INFO    SenderThread:86449 [file_stream.py:finish():605] file stream finish is done
+2024-09-11 23:27:04,446 INFO    SenderThread:86449 [sender.py:transition_state():626] send defer: 13
+2024-09-11 23:27:04,446 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 23:27:04,446 INFO    HandlerThread:86449 [handler.py:handle_request_defer():184] handle defer: 13
+2024-09-11 23:27:04,446 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: defer
+2024-09-11 23:27:04,446 INFO    SenderThread:86449 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-09-11 23:27:04,446 INFO    SenderThread:86449 [sender.py:transition_state():626] send defer: 14
+2024-09-11 23:27:04,446 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: defer
+2024-09-11 23:27:04,446 INFO    HandlerThread:86449 [handler.py:handle_request_defer():184] handle defer: 14
+2024-09-11 23:27:04,447 DEBUG   SenderThread:86449 [sender.py:send():391] send: final
+2024-09-11 23:27:04,447 DEBUG   SenderThread:86449 [sender.py:send():391] send: footer
+2024-09-11 23:27:04,447 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: defer
+2024-09-11 23:27:04,447 INFO    SenderThread:86449 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-09-11 23:27:04,447 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-11 23:27:04,448 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: poll_exit
+2024-09-11 23:27:04,448 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: server_info
+2024-09-11 23:27:04,448 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: server_info
+2024-09-11 23:27:04,449 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-11 23:27:04,450 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: get_summary
+2024-09-11 23:27:04,450 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: sampled_history
+2024-09-11 23:27:04,450 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-11 23:27:04,505 DEBUG   SenderThread:86449 [sender.py:send_request():418] send_request: poll_exit
+2024-09-11 23:27:04,506 INFO    MainThread:86449 [wandb_run.py:_footer_history_summary_info():4088] rendering history
+2024-09-11 23:27:04,506 INFO    MainThread:86449 [wandb_run.py:_footer_history_summary_info():4120] rendering summary
+2024-09-11 23:27:04,506 INFO    MainThread:86449 [wandb_run.py:_footer_sync_info():4047] logging synced files
+2024-09-11 23:27:04,506 DEBUG   HandlerThread:86449 [handler.py:handle_request():158] handle_request: shutdown
+2024-09-11 23:27:04,506 INFO    HandlerThread:86449 [handler.py:finish():884] shutting down handler
+2024-09-11 23:27:05,450 INFO    WriterThread:86449 [datastore.py:close():296] close: /home/edward/Sila/wandb/run-20240911_231146-xswm9grx/run-xswm9grx.wandb
+2024-09-11 23:27:05,506 INFO    SenderThread:86449 [sender.py:finish():1631] shutting down sender
+2024-09-11 23:27:05,506 INFO    SenderThread:86449 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-11 23:27:05,506 INFO    SenderThread:86449 [file_pusher.py:join():175] waiting for file pusher

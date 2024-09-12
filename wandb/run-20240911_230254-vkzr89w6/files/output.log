@@ -1,0 +1,89 @@
+Map: 100%|███████████████████████████| 900/900 [00:01<00:00, 871.92 examples/s]
+Map: 100%|███████████████████████████| 100/100 [00:00<00:00, 840.82 examples/s]
+[34m[1mwandb[39m[22m: [33mWARNING[39m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+  0%|                                                   | 0/50 [00:00<?, ?it/s]/opt/conda/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result)) ?it/s]
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/opt/conda/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  0%|                                                   | 0/50 [00:09<?, ?it/s]
+Validation Report:
+              precision    recall  f1-score   support
+           0       0.00      0.00      0.00        10
+           1       0.42      1.00      0.59        42
+           2       0.00      0.00      0.00        23
+           3       0.00      0.00      0.00        20
+           4       0.00      0.00      0.00         5
+    accuracy                           0.42       100
+   macro avg       0.08      0.20      0.12       100
+weighted avg       0.18      0.42      0.25       100
+Confusion Matrix:
+[[ 0 10  0  0  0]
+ [ 0 42  0  0  0]
+ [ 0 23  0  0  0]
+ [ 0 20  0  0  0]
+ [ 0  5  0  0  0]]
+  0%|                                                   | 0/50 [00:09<?, ?it/s]Traceback (most recent call last):
+  File "/home/edward/Sila/train_edu_bert.py", line 196, in <module>
+    main(args)
+  File "/home/edward/Sila/train_edu_bert.py", line 150, in main
+    trainer.train()
+  File "/opt/conda/lib/python3.10/site-packages/transformers/trainer.py", line 1929, in train
+    return inner_training_loop(
+  File "/opt/conda/lib/python3.10/site-packages/transformers/trainer.py", line 2279, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/opt/conda/lib/python3.10/site-packages/transformers/trainer.py", line 3318, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/opt/conda/lib/python3.10/site-packages/transformers/trainer.py", line 3363, in compute_loss
+    outputs = model(**inputs)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 186, in forward
+    outputs = self.parallel_apply(replicas, inputs, module_kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 201, in parallel_apply
+    return parallel_apply(replicas, inputs, kwargs, self.device_ids[:len(replicas)])
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/parallel/parallel_apply.py", line 109, in parallel_apply
+    output.reraise()
+  File "/opt/conda/lib/python3.10/site-packages/torch/_utils.py", line 706, in reraise
+    raise exception
+torch.OutOfMemoryError: Caught OutOfMemoryError in replica 0 on device 0.
+Original Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/parallel/parallel_apply.py", line 84, in _worker
+    output = module(*input, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/edward/.cache/huggingface/modules/transformers_modules/Snowflake/arctic-embed-m-long/89d0f6ab196eead40b90cb6f9fefec01a908d2d1/modeling_hf_nomic_bert.py", line 1178, in forward
+    outputs = self.bert(
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/edward/.cache/huggingface/modules/transformers_modules/Snowflake/arctic-embed-m-long/89d0f6ab196eead40b90cb6f9fefec01a908d2d1/modeling_hf_nomic_bert.py", line 1070, in forward
+    sequence_output = self.encoder(hidden_states, attention_mask=attention_mask, return_dict=return_dict)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/edward/.cache/huggingface/modules/transformers_modules/Snowflake/arctic-embed-m-long/89d0f6ab196eead40b90cb6f9fefec01a908d2d1/modeling_hf_nomic_bert.py", line 957, in forward
+    hidden_states, hidden_states2, residual = layer(
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/edward/.cache/huggingface/modules/transformers_modules/Snowflake/arctic-embed-m-long/89d0f6ab196eead40b90cb6f9fefec01a908d2d1/modeling_hf_nomic_bert.py", line 890, in forward
+    attn_outputs = self.attn(
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/edward/.cache/huggingface/modules/transformers_modules/Snowflake/arctic-embed-m-long/89d0f6ab196eead40b90cb6f9fefec01a908d2d1/modeling_hf_nomic_bert.py", line 793, in forward
+    attention_scores = torch.matmul(query, key.transpose(-1, -2)) / self.norm_factor
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 5.30 GiB. GPU 0 has a total capacity of 79.10 GiB of which 4.84 GiB is free. Including non-PyTorch memory, this process has 74.25 GiB memory in use. Of the allocated memory 69.86 GiB is allocated by PyTorch, and 88.52 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
