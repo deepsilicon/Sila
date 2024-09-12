@@ -25,8 +25,12 @@ def compute_metrics(eval_pred):
     logits, labels = eval_pred
     preds = np.round(logits.squeeze()).clip(0, 4).astype(int)+1
     # preds = np.round(logits.squeeze()).astype(int)
-
+    
     labels = np.round(labels.squeeze()).astype(int)
+    print("labels before scaling", np.unique(labels))
+    labels = labels.clip(0,4).astype(int)+1
+    print("Unique predictions after scaling:", np.unique(preds))
+    print("Unique labels after scaling:", np.unique(labels)) 
     precision = precision_metric.compute(
         predictions=preds, references=labels, average="macro"
     )["precision"]
@@ -53,9 +57,9 @@ def main(args):
     wandb.init(project=args.wandb_project_name, name=args.wandb_run_name)
 
     dataset = load_dataset(
-        args.dataset_name, split="train", cache_dir="/tmp/dataset/cache/", num_proc=8
+        args.dataset_name, split="train", cache_dir="./tmp/dataset/cache/", num_proc=8
     )
-    # dataset = dataset.shuffle(seed=42).select(range(1000))
+    #dataset = dataset.shuffle(seed=42).select(range(100000))
 
     dataset = dataset.map(
         #lambda x: {args.target_column: np.clip(int(x[args.target_column]), 0, 5)},
@@ -63,6 +67,8 @@ def main(args):
 
         num_proc=8,
     )
+    unique_values = dataset.unique(args.target_column)
+    print("Unique values in the target column:", unique_values)
 
     dataset = dataset.cast_column(
         args.target_column, ClassLabel( names=[str(i) for i in range(0, 5)])
@@ -153,17 +159,15 @@ def main(args):
     trainer.save_model(os.path.join(args.checkpoint_dir, "final"))
     eval_predictions = trainer.predict(dataset["test"])
     preds = np.round(eval_predictions.predictions.squeeze()).clip(0, 4).astype(int)+1
-    labels = np.round(eval_predictions.label_ids.squeeze()).astype(int)
+    labels = np.round(eval_predictions.label_ids.squeeze()).astype(int)+1
 
-    # Compute metrics using the compute_metrics function
-    metrics = compute_metrics((eval_predictions.predictions, eval_predictions.label_ids))
 
     # Print confusion matrix
-    cm = confusion_matrix(labels, preds)
-    print("Confusion Matrix after training:\n" + str(cm))
+    #cm = confusion_matrix(labels, preds)
+    #print("Confusion Matrix after training:\n" + str(cm))
 
     # Optionally print computed metrics
-    print("Metrics after training:\n", metrics)
+    #print("Metrics after training:\n", metrics)
     wandb.finish()
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -179,7 +183,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--checkpoint_dir",
         type=str,
-        default="/tmp/star_edu_score/bert_snowflake_regression",
+        default="i./tmp/star_edu_score/bert_snowflake_regression",
     )
     parser.add_argument(
         "--output_model_name", type=str, default="kaizen9/starcoder-scorer"
