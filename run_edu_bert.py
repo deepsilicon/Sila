@@ -16,7 +16,8 @@ def main(args):
         args.dataset_name,
         args.dataset_config,
         split="train",
-        cache_dir="/scratch/cosmo/cache/",
+        data_dir='python',
+        cache_dir="/home/edwardbzhang/Sila/tmp/starcoder_python/cache/",
         num_proc=12,
     )
     dataset = dataset.filter(
@@ -59,17 +60,18 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     parser.add_argument(
-        "--model_name", type=str, default="HHuggingFaceFW/fineweb-edu-classifier"
+        "--model_name", type=str, default="kaizen9/starcoder-scorer"
     )
-    parser.add_argument("--dataset_name", type=str, default="HuggingFaceFW/fineweb")
+    parser.add_argument("--dataset_name", type=str, default="bigcode/starcoderdata")
     parser.add_argument("--dataset_config", type=str, default="default")
     parser.add_argument(
-        "--output_dataset_name", type=str, default="HuggingFaceFW/fineweb-edu"
+        "--output_dataset_name", type=str, default="kaizen9/starcoder_python_HQ"
     )
     parser.add_argument("--output_dataset_config", type=str, default="default")
-    parser.add_argument("--text_column", type=str, default="text")
+    parser.add_argument("--text_column", type=str, default="content")
     parser.add_argument("--shard", type=int, required=True)
     parser.add_argument("--num_shards", type=int, required=True)
 
     args = parser.parse_args()
     main(args)
+    
