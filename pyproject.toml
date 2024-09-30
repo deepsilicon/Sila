@@ -1,0 +1,22 @@
+[project]
+name = "sila"
+version = "0.1"
+description = "A CLI tool for multinode infrastructure"
+readme = "README.md"
+authors = [{ name = "Abhinav Reddy" }]
+license = { text = "Apache-2.0" }
+requires-python = ">=3.8"
+classifiers = ["License :: OSI Approved :: Apache Software License"]
+dependencies = ["click", "awscli", "aws-parallelcluster"]
+
+[project.urls]
+Homepage = "https://github.com/deepsilicon/Sila"
+Changelog = "https://github.com/deepsilicon/Sila/releases"
+Issues = "https://github.com/deepsilicon/Sila/issues"
+CI = "https://github.com/deepsilicon/Sila/actions"
+
+[project.scripts]
+sila = "sila.cli:cli"
+
+[project.optional-dependencies]
+test = ["pytest"]
