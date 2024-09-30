@@ -15,6 +15,9 @@ Changelog = "https://github.com/deepsilicon/Sila/releases"
 Issues = "https://github.com/deepsilicon/Sila/issues"
 CI = "https://github.com/deepsilicon/Sila/actions"
 
+[tool.setuptools]
+packages = ["sila"]
+
 [project.scripts]
 sila = "sila.cli:cli"
 
